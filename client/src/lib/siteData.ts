@@ -1,5 +1,5 @@
-// Design: Precision Ops Dashboard — Dark Mode Intelligence
-// All 106 deployed websites organized by project group with recommendations
+// Rose/Stone Dimension Design System
+// All 104 deployed websites organized by project group with recommendations
 
 export type Recommendation = "Keep" | "Delete" | "Combine";
 export type PolishLevel = "Polished" | "Draft/WIP" | "Blank/Error";
@@ -24,6 +24,7 @@ export interface SiteGroup {
 }
 
 export const siteGroups: SiteGroup[] = [
+  // ─── SUMMER CAMP ENROLLMENT ───────────────────────────────────────────────
   {
     id: "summer-camp",
     name: "Summer Camp Enrollment",
@@ -37,7 +38,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Published",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Most recent published version. Full enrollment hub with guides, interactive training, communication tools, and manager resources.",
+        purpose: "This is the most recent and fully published version of your Summer Camp Enrollment hub. It includes interactive enrollment guides, staff training modules, communication tools, and manager resources all in one place. This is the one to keep as your primary reference.",
         group: "summer-camp",
       },
       {
@@ -48,7 +49,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Identical duplicate of the Summer Camp Enrollment Resources hub. Same content, same structure.",
+        purpose: "This is an identical duplicate of the Summer Camp Enrollment Resources hub above, deployed on the same day. It has the exact same content, structure, and sections. Safe to delete since the primary version (yfnbtxup) is the one to keep.",
         group: "summer-camp",
       },
       {
@@ -59,11 +60,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Published",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Older duplicate of the Summer Camp Enrollment Resources hub. Identical content to the May 18 version.",
+        purpose: "This is an older version of the Summer Camp Enrollment hub, deployed one day before the final version. The content is essentially the same as the May 18 version. Since the newer version supersedes it, this one can be safely deleted.",
         group: "summer-camp",
       },
     ],
   },
+
+  // ─── GYMNASTICS SALES TRAINING ────────────────────────────────────────────
   {
     id: "sales-training",
     name: "Gymnastics Sales Training",
@@ -77,7 +80,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Most comprehensive and recent version. Full 4-week pilot program, job descriptions, phone scripts, exercises, and metrics dashboard.",
+        purpose: "This is the most comprehensive and up-to-date version of your gymnastics sales training system. It includes a full 4-week pilot program, detailed job descriptions, phone scripts, objection-handling exercises, and a metrics dashboard. This is the definitive version to keep as your primary sales training resource.",
         group: "sales-training",
       },
       {
@@ -88,7 +91,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Polished sales training site covering Windows & Doors technique, objection handling, and belief-building exercises. Superseded by newer version.",
+        purpose: "A polished mid-year version of the sales training site covering the Windows & Doors conversation technique, objection handling, and belief-building exercises. It was a solid version at the time but has since been superseded by the December update. Safe to delete.",
         group: "sales-training",
       },
       {
@@ -99,7 +102,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Jun 17 sales training site. Same content and structure.",
+        purpose: "An exact duplicate of the Jun 17 sales training site above — same content, same structure, deployed on the same day. There is no reason to keep both. Delete this one.",
         group: "sales-training",
       },
       {
@@ -110,7 +113,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Earlier version of the sales system. Includes Jayme's Login feature but otherwise same content.",
+        purpose: "An earlier June version of the sales system that added a Jayme's Login feature but otherwise contains the same core content. It was an intermediate build during development. Superseded by the Jun 17 and Dec 5 versions.",
         group: "sales-training",
       },
       {
@@ -121,7 +124,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Jun 11 sales training site. Identical content.",
+        purpose: "A duplicate of the Jun 11 sales training site with identical content and layout. It was likely deployed as a test or backup during that development session. Safe to delete.",
         group: "sales-training",
       },
       {
@@ -132,7 +135,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Earlier version focused on introduction and belief-building exercises. Superseded.",
+        purpose: "An early June version focused on the introduction and belief-building exercises of the sales system. This was one of the first polished iterations of the training content. It has been fully superseded by later versions.",
         group: "sales-training",
       },
       {
@@ -143,7 +146,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed version of the sales system. Covers Windows & Doors analogy and core sections.",
+        purpose: "An unnamed version of the sales system deployed on Jun 7, covering the Windows & Doors analogy and core training sections. The generic name suggests it was a working draft that was never properly titled. Superseded.",
         group: "sales-training",
       },
       {
@@ -154,7 +157,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Another unnamed version of the sales system with full content including 70/30 Rule and YES-AND objection handling.",
+        purpose: "Another unnamed Jun 7 version of the sales system with full content including the 70/30 Rule and YES-AND objection handling technique. It was part of the same development sprint as the other Jun 7 versions. Safe to delete.",
         group: "sales-training",
       },
       {
@@ -165,7 +168,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed version of the Belief + Knowledge Sales System. Duplicate content.",
+        purpose: "Yet another unnamed Jun 7 version of the Belief + Knowledge Sales System with duplicate content. This appears to be one of several test deployments from the same session. Safe to delete.",
         group: "sales-training",
       },
       {
@@ -176,7 +179,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Comprehensive early version with full Windows & Doors system, 70/30 Rule, and objection handling.",
+        purpose: "A comprehensive early version of the sales system from Jun 6, featuring the full Windows & Doors system, 70/30 Rule, and objection handling. This was one of the first complete builds of the training content. Superseded by all later versions.",
         group: "sales-training",
       },
       {
@@ -187,7 +190,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Published",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Earliest version of the gymnastics sales training system. Named 'Create Next App' — clearly a leftover from initial scaffolding.",
+        purpose: "The very first version of the gymnastics sales training system, still named 'Create Next App' — a leftover from the initial project scaffolding. Despite being published, this is the oldest and most outdated version. Safe to delete.",
         group: "sales-training",
       },
       {
@@ -198,11 +201,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed early version of the sales training system. Same content as the Apr 16 version.",
+        purpose: "An unnamed early version of the sales training system from the same April development session. It has the same content as the Apr 16 'Create Next App' version. Both are the oldest builds and have been fully superseded.",
         group: "sales-training",
       },
     ],
   },
+
+  // ─── GYMNASTICS CONTENT HUB / CMS ────────────────────────────────────────
   {
     id: "content-hub",
     name: "Gymnastics Content Hub / CMS",
@@ -216,7 +221,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Unique email design and generation platform. Allows selecting from FAQ, Quiz, and Complete templates, generating emails for specific gyms, and AI analysis.",
+        purpose: "A unique email design and generation platform that lets you select from FAQ, Quiz, and Complete email templates, then generate customized emails for specific gyms. It also includes AI-powered email analysis. This is a distinct tool from the other content managers and worth keeping.",
         group: "content-hub",
       },
       {
@@ -227,7 +232,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Content management system for tracking monthly content assignments — photo carousels, video reels, mixed content — with gym submissions and social posting tracking.",
+        purpose: "A content management system for tracking monthly content assignments across gyms — covering photo carousels, video reels, and mixed content types. It tracks gym submissions and social posting status. This is the most functional and up-to-date content tracker, worth keeping.",
         group: "content-hub",
       },
       {
@@ -238,7 +243,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Comprehensive document manager for gymnastics content organized by Curriculum & Training, Marketing & Social Media, Business Strategy, Preschool Programs, and Technical Skills.",
+        purpose: "A comprehensive document manager for gymnastics content organized into categories: Curriculum & Training, Marketing & Social Media, Business Strategy, Preschool Programs, and Technical Skills. It's the cleanest single-panel document manager in the group. Keep this as your primary document hub.",
         group: "content-hub",
       },
       {
@@ -249,7 +254,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Best version of the Universal CMS. Structured content library with implementation guides, interactive games, prize system, and detailed content pieces with ROI metrics.",
+        purpose: "The best version of the Universal Content Management System, featuring a structured content library with implementation guides, interactive games, a prize system, and detailed content pieces with ROI metrics. This is the most feature-rich of the many Universal CMS versions. Keep this one and delete all the duplicates.",
         group: "content-hub",
       },
       {
@@ -260,7 +265,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Curated database of 30+ social media content ideas for gymnastics with categories, audiences, levels, and advanced filtering.",
+        purpose: "A curated database of 30+ social media content ideas for gymnastics clubs, with categories, target audiences, skill levels, and advanced filtering. This is a unique browsable idea library that serves a different purpose from the document managers. Worth keeping.",
         group: "content-hub",
       },
       {
@@ -271,7 +276,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "300+ content ideas for gymnastics clubs covering energy management, brain development, life skills, and authentic community content.",
+        purpose: "A large collection of 300+ content ideas for gymnastics clubs covering energy management, brain development, life skills, and authentic community content. This is the original and most complete version of the social media content hub. Keep this one and delete the duplicates.",
         group: "content-hub",
       },
       {
@@ -282,7 +287,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of Gym Content Manager. Same dashboard, content tracker, and gym shortcuts.",
+        purpose: "A duplicate of the Gym Content Manager above, deployed on the same day with the same dashboard, content tracker, and gym shortcuts. There is no functional difference between the two. Delete this one and keep kkgpsidz.",
         group: "content-hub",
       },
       {
@@ -293,7 +298,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate document hub with same categories as the Content Hub - Document Manager.",
+        purpose: "A duplicate document hub with the same categories and layout as the Content Hub - Document Manager (tiujeaef). It was likely an intermediate build before the final version was settled. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -304,7 +309,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Second duplicate of the document hub. Identical to xfbcxcia version.",
+        purpose: "A second duplicate of the document hub, identical to the xfbcxcia version deployed on the same day. Both are superseded by the cleaner tiujeaef version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -315,7 +320,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Three-panel layout version of the document manager. Superseded by the single-panel version.",
+        purpose: "A three-panel layout version of the document manager, deployed on the same day as the final single-panel version. The three-panel design was an experimental layout that was ultimately replaced. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -326,7 +331,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Earlier three-panel document manager with AI Notes feature. Superseded.",
+        purpose: "An earlier three-panel document manager that included an AI Notes feature. This was part of the iterative development of the document hub layout. Superseded by the Jul 3 final version.",
         group: "content-hub",
       },
       {
@@ -337,7 +342,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Three-panel document manager with document viewer and AI notes. Duplicate.",
+        purpose: "Another Jul 2 three-panel document manager with a document viewer and AI notes panel. One of several builds from the same development session. Duplicate — safe to delete.",
         group: "content-hub",
       },
       {
@@ -348,7 +353,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Minimal three-panel content hub. Duplicate of other three-panel versions.",
+        purpose: "A minimal three-panel content hub from the same Jul 2 development session. It has the same structure as the other three-panel versions but with less content. Duplicate — safe to delete.",
         group: "content-hub",
       },
       {
@@ -359,7 +364,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Comprehensive document management system with search, categories, and AI-enhanced content. Superseded by newer versions.",
+        purpose: "A comprehensive document management system with search, categories, and AI-enhanced content, deployed Jul 2. It was superseded the very next day by the cleaner tiujeaef version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -370,7 +375,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Earlier version of the Ultimate Document Management System. Duplicate.",
+        purpose: "An earlier Jul 1 version of the Ultimate Document Management System. It was quickly followed by multiple newer versions the next day. Duplicate — safe to delete.",
         group: "content-hub",
       },
       {
@@ -381,7 +386,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Ultimate Source of Truth content creation system. Outlines EPIC Content Formula and viral strategies. Overlaps with other content hubs.",
+        purpose: "An unnamed content creation system that outlines the EPIC Content Formula and viral content strategies. While the content is interesting, it significantly overlaps with other content hubs and has no unique name. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -392,7 +397,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog. Same content library, interactive games, and prize system.",
+        purpose: "A duplicate of the Universal CMS catalog (etpcjrtk) deployed on the same day. It has the same content library, interactive games, and prize system. Keep etpcjrtk and delete this one.",
         group: "content-hub",
       },
       {
@@ -403,7 +408,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "Another duplicate of the Universal CMS catalog from the Jun 27 development session. Identical content and structure to the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -414,7 +419,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -425,7 +430,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -436,7 +441,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -447,7 +452,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Month-specific content dashboard for August. Ready-to-post content, interactive games, prize system. Superseded by the general Gym Content Manager.",
+        purpose: "A month-specific content dashboard built for August, featuring ready-to-post content, interactive games, and a prize system. While it was functional, it was superseded by the more general Gym Content Manager. Month-specific dashboards are better managed within a general system.",
         group: "content-hub",
       },
       {
@@ -458,7 +463,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -469,7 +474,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -480,7 +485,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -491,7 +496,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the Universal CMS catalog.",
+        purpose: "One of several identical Universal CMS duplicates deployed on Jun 27. No functional difference from the primary version. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -502,7 +507,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "300+ content ideas hub. Duplicate of the May 22 version.",
+        purpose: "A 300+ content ideas hub deployed in June, which is a duplicate of the May 22 tmofynkc version. The content is the same social media idea library. Keep the original tmofynkc and delete this one.",
         group: "content-hub",
       },
       {
@@ -513,7 +518,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed social media content hub for gymnastics. Duplicate of the gymnastics-content-hub.",
+        purpose: "An unnamed social media content hub for gymnastics deployed on the same day as zdeglbqq. It has the same 300+ content ideas as the original. Duplicate — safe to delete.",
         group: "content-hub",
       },
       {
@@ -524,7 +529,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Strategy package for viral content and ambassador program. Overlaps with other content hubs.",
+        purpose: "A strategy package covering viral content creation and an ambassador program for gymnastics clubs. While it has some unique ambassador program content, it significantly overlaps with the other content hubs. The content could be folded into the primary hub.",
         group: "content-hub",
       },
       {
@@ -535,7 +540,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Marketing content database with social media ideas. Duplicate of the dkvbrrcz version.",
+        purpose: "A marketing content database with social media ideas, deployed the same day as the dkvbrrcz version. It is a duplicate of that database with the same browsable idea library. Keep dkvbrrcz and delete this one.",
         group: "content-hub",
       },
       {
@@ -546,7 +551,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate of the tmofynkc gymnastics content hub. Same 300+ content ideas.",
+        purpose: "A duplicate of the tmofynkc gymnastics content hub deployed on the same day. It contains the same 300+ content ideas and categories. Keep tmofynkc and delete this one.",
         group: "content-hub",
       },
       {
@@ -557,7 +562,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Gymnastics marketing hub with task management and calendar. Overlaps with gymnect-dashboard.",
+        purpose: "A gymnastics marketing hub with task management and a content calendar, deployed in May. It overlaps significantly with the gymnect-dashboard and later content managers. An early prototype that has been superseded.",
         group: "content-hub",
       },
       {
@@ -568,7 +573,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Gymnastics marketing hub dashboard. Duplicate of ljaqwoov version.",
+        purpose: "A gymnastics marketing hub dashboard deployed on the same day as ljaqwoov. It is a duplicate of that version with the same task management and calendar features. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -579,7 +584,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Gymnastics Events Calendar synced with iClass portals. Early prototype, superseded.",
+        purpose: "An early prototype of a gymnastics events calendar that was designed to sync with iClass portals. This was one of the first tools built and has been fully superseded by later, more comprehensive content managers. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -590,7 +595,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Published",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "Early gym marketing dashboard. Work-in-progress with incomplete features. Superseded by newer content managers.",
+        purpose: "The earliest gymnastics marketing dashboard, dating back to April 2025. It is a work-in-progress with incomplete features and a rough layout. All of its functionality has been rebuilt and improved in later versions. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -601,7 +606,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "Raw document dump with mixed gymnastics and unrelated technical files. Appears to be a development artifact.",
+        purpose: "A raw document dump containing a mix of gymnastics and unrelated technical files. This appears to be a development artifact from a build session, not an intentional user-facing site. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -612,7 +617,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "User API test interface. Development/backend testing artifact, not a user-facing site.",
+        purpose: "A user API test interface — essentially a backend testing tool that was accidentally deployed as a public site. It is not a user-facing product and has no content for end users. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -623,7 +628,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "User API test interface for gym content system. Development artifact.",
+        purpose: "Another user API test interface for the gym content system backend. Like the mzhyi8cdl89k site, this is a development artifact that was deployed publicly by mistake. Not a user-facing product.",
         group: "content-hub",
       },
       {
@@ -634,7 +639,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "User API test interface for gym content manager. Development artifact.",
+        purpose: "A user API test interface for the gym content manager backend, similar to the other API test sites. It was deployed as part of the backend development process and is not intended for end users. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -645,7 +650,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "Backend API testing interface for user management CRUD operations. Development artifact.",
+        purpose: "A backend API testing interface for user management CRUD operations. This is a development/debugging tool that should never have been left as a public deployment. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -656,7 +661,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Document manager for gymnastics content. Duplicate of the Content Hub - Document Manager.",
+        purpose: "A document manager for gymnastics content with the same categories as the Content Hub - Document Manager (tiujeaef). It was deployed on the same day as the final version and is a duplicate. Safe to delete.",
         group: "content-hub",
       },
       {
@@ -667,7 +672,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed gymnastics content hub with search, categories, and AI-enhanced documents. Duplicate.",
+        purpose: "An unnamed gymnastics content hub with search, categories, and AI-enhanced document features. It is a duplicate of the other Jul 2 content hub builds. No unique name or purpose — safe to delete.",
         group: "content-hub",
       },
       {
@@ -678,11 +683,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Month-specific document hub for July content. Superseded by the general Gym Content Manager.",
+        purpose: "A month-specific document hub built for July content planning. Like the August dashboard, it has been superseded by the general Gym Content Manager which handles all months. Month-specific sites create unnecessary clutter.",
         group: "content-hub",
       },
     ],
   },
+
+  // ─── EMAIL HUB / BUILDER ─────────────────────────────────────────────────
   {
     id: "email-hub",
     name: "Email Hub / Builder",
@@ -696,7 +703,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Email generation system with pre-designed templates: Quiz, Monthly Events Newsletter, Back to School Special. Select gyms and customize.",
+        purpose: "An email generation system with pre-designed templates including Quiz, Monthly Events Newsletter, and Back to School Special. You can select specific gyms and customize the output. This is a functional, polished tool worth keeping.",
         group: "email-hub",
       },
       {
@@ -707,7 +714,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Data-backed email marketing strategies for recreational gymnastics clubs. Covers core strategies, campaign library, design excellence, and audience intelligence.",
+        purpose: "A data-backed email marketing strategy resource for recreational gymnastics clubs. It covers core strategies, a campaign library, design excellence principles, and audience intelligence. This is a reference/strategy hub rather than a builder, making it a unique and useful resource.",
         group: "email-hub",
       },
       {
@@ -718,7 +725,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Most functional Email Approval Hub. Manages email status (Pending Review, Sent/Live, Needs Edits, Overdue) across multiple gymnastics academies.",
+        purpose: "The most functional Email Approval Hub, managing email status (Pending Review, Sent/Live, Needs Edits, Overdue) across multiple gymnastics academies. It provides a clear workflow for tracking which emails have been approved and sent. This is the primary version to keep.",
         group: "email-hub",
       },
       {
@@ -729,7 +736,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub. Same functionality as the primary version.",
+        purpose: "A duplicate Email Approval Hub preview with the same functionality as the primary version (qpzjmceezkkwdssw). It was deployed in the same session as part of iterative testing. Safe to delete.",
         group: "email-hub",
       },
       {
@@ -740,7 +747,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub preview. Same content and functionality.",
+        purpose: "A duplicate Email Approval Hub preview from the same Aug 28 development session. It has the same content and approval workflow as the primary version. Safe to delete.",
         group: "email-hub",
       },
       {
@@ -751,7 +758,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub preview.",
+        purpose: "Another duplicate Email Approval Hub preview from the Aug 28 session. No functional difference from the primary version. Safe to delete.",
         group: "email-hub",
       },
       {
@@ -762,7 +769,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub — this version is specifically for Capital Gymnastics branches.",
+        purpose: "A duplicate Email Approval Hub that appears to be specifically configured for Capital Gymnastics branches. Since this is a preview/test version and the primary hub covers all academies, this one can be safely deleted.",
         group: "email-hub",
       },
       {
@@ -773,7 +780,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub preview.",
+        purpose: "Another duplicate Email Approval Hub preview from the Aug 28 session. No functional difference from the primary version. Safe to delete.",
         group: "email-hub",
       },
       {
@@ -784,7 +791,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Unnamed Email Approval Hub preview. Duplicate.",
+        purpose: "An unnamed Email Approval Hub preview from the same Aug 28 session. The generic name and duplicate content confirm this was a test deployment. Safe to delete.",
         group: "email-hub",
       },
       {
@@ -795,11 +802,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Polished",
         recommendation: "Delete",
-        purpose: "Duplicate Email Approval Hub preview.",
+        purpose: "The final duplicate Email Approval Hub preview from the Aug 28 session. No functional difference from the primary version. Safe to delete.",
         group: "email-hub",
       },
     ],
   },
+
+  // ─── LEAD MANAGEMENT ─────────────────────────────────────────────────────
   {
     id: "lead-management",
     name: "Lead Management",
@@ -813,7 +822,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Real-time lead tracking for Scottsdale Gymnastics. View lead profiles, track call progress, manage telethon actions, and filter by interest categories.",
+        purpose: "A real-time lead tracking system built specifically for Scottsdale Gymnastics. It lets you view lead profiles, track call progress, manage telethon actions, and filter leads by interest categories. This is a functional and unique tool — keep it.",
         group: "lead-management",
       },
       {
@@ -824,11 +833,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Non-functional — displays a connection error due to database configuration issue. Cannot load any content.",
+        purpose: "This site displays a connection error due to a database configuration issue and cannot load any content. It was intended to be a lead manager for Capital Gymnastics but is completely non-functional. Safe to delete.",
         group: "lead-management",
       },
     ],
   },
+
+  // ─── CAMP HUB ─────────────────────────────────────────────────────────────
   {
     id: "camp-hub",
     name: "Camp Hub",
@@ -842,7 +853,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Fully functional Camp Hub with Arts & Crafts and Games sections. Provides interactive activities with detailed instructions and visual diagrams.",
+        purpose: "A fully functional Camp Hub with Arts & Crafts and Games sections, providing interactive activities with detailed instructions and visual diagrams for camp staff. This is the most complete and polished version of the Camp Hub. Keep this one.",
         group: "camp-hub",
       },
       {
@@ -853,7 +864,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Draft/WIP",
         recommendation: "Delete",
-        purpose: "Earlier version of the Camp Hub. Currently a placeholder/under development with no visible content.",
+        purpose: "An earlier version of the Camp Hub from three days before the final version. It is currently a placeholder or under-development state with no visible content. Superseded by the Oct 18 version. Safe to delete.",
         group: "camp-hub",
       },
       {
@@ -864,11 +875,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "This site returns a 404 error and is completely non-functional. Despite being deployed in December, it never loaded correctly. Safe to delete immediately.",
         group: "camp-hub",
       },
     ],
   },
+
+  // ─── GYMVISION CMS ────────────────────────────────────────────────────────
   {
     id: "gymvision",
     name: "GymVision CMS",
@@ -882,7 +895,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Published",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Published GymVision CMS. The primary, most stable version of the GymVision content management system.",
+        purpose: "The primary, published version of the GymVision Content Management System. It is the most stable and complete version, marked as Published. This is the definitive GymVision CMS — keep this one.",
         group: "gymvision",
       },
       {
@@ -893,11 +906,13 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Not loading — stuck on a loading screen. Non-functional duplicate.",
+        purpose: "A non-functional duplicate of the GymVision CMS that is stuck on a loading screen and never renders any content. Despite being deployed after the primary version, it never worked correctly. Safe to delete.",
         group: "gymvision",
       },
     ],
   },
+
+  // ─── OTHER / STANDALONE ───────────────────────────────────────────────────
   {
     id: "other",
     name: "Other / Standalone",
@@ -911,7 +926,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Studio management system for Degage Classical Conservatory. Handles student records, contracts, and payments. Completely separate from gymnastics projects.",
+        purpose: "A studio management system built specifically for Degage Classical Conservatory, handling student records, contracts, and payments. This is completely separate from all the gymnastics projects and serves a different client entirely. Keep it.",
         group: "other",
       },
       {
@@ -922,7 +937,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "General-purpose digital task management tool with task overview, filtering by timeframe, and automation features.",
+        purpose: "A general-purpose digital task management tool with task overview, filtering by timeframe, and automation features. It is not gymnastics-specific and serves as a standalone productivity tool. Worth keeping as a unique utility.",
         group: "other",
       },
       {
@@ -933,7 +948,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "AI-powered campaign generator for gymnastics clubs. Unique tool for generating marketing campaigns.",
+        purpose: "An AI-powered campaign generator for gymnastics clubs that creates customized marketing campaigns. This is a unique tool with no duplicate in your portfolio. Keep it as a standalone campaign creation resource.",
         group: "other",
       },
       {
@@ -944,7 +959,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Dedicated summer camp management tool for gyms. Unique functionality separate from the general content managers.",
+        purpose: "A dedicated summer camp management tool for gyms with unique functionality for planning and running camp programs. It is distinct from the general content managers and the Camp Hub. Keep it as a specialized camp operations tool.",
         group: "other",
       },
       {
@@ -955,15 +970,17 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Polished",
         recommendation: "Keep",
-        purpose: "Unique content strategy tool for repurposing a single story across multiple content formats and lenses.",
+        purpose: "A unique content strategy tool for repurposing a single story across multiple content formats and perspectives. It helps you get maximum mileage from one piece of content by viewing it through different lenses. No duplicate exists — keep it.",
         group: "other",
       },
     ],
   },
+
+  // ─── BLANK / ERROR / INACCESSIBLE ────────────────────────────────────────
   {
     id: "blank-error",
     name: "Blank / Error / Inaccessible",
-    description: "Sites that are blank, return errors, or are completely inaccessible. Safe to delete.",
+    description: "Sites that are blank, return errors, or are completely inaccessible. All safe to delete.",
     sites: [
       {
         id: 81,
@@ -973,7 +990,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. Despite being the most recently deployed site on the list, it never loaded correctly. The name suggests it was intended as an email generation tool, but it was never completed.",
         group: "blank-error",
       },
       {
@@ -984,7 +1001,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. The name suggests it was intended to help find trial class leads internally, but the site was never completed or deployed successfully.",
         group: "blank-error",
       },
       {
@@ -995,7 +1012,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. It was likely an early attempt at an email builder that was abandoned in favor of the Ultimate Gym Email System. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1006,7 +1023,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. The name suggests it was intended as a social media campaign management tool, but it was never successfully deployed. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1017,7 +1034,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. It was likely intended as an image management tool for gym content but was never completed. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1028,7 +1045,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank placeholder page with no content or functionality.",
+        purpose: "A blank placeholder page with no content or functionality. Despite being public, there is nothing on this site. The name suggests a holiday marketing campaign tool that was never built out. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1039,7 +1056,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. This appears to be an unrelated side project that was never completed. It has no connection to the gymnastics projects. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1050,7 +1067,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. It was likely intended as a quick pricing reference tool for camp enrollment but was never successfully deployed. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1061,7 +1078,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Displays 'Failed to load data from database' error. Non-functional.",
+        purpose: "Displays a 'Failed to load data from database' error and cannot show any content. This was an early version of the Email Approval Hub that had a broken database connection. The functional version (qpzjmceezkkwdssw) replaced it. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1072,7 +1089,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Displays 'website has been set to unavailable' message. Non-functional.",
+        purpose: "Displays a 'website has been set to unavailable' message and cannot be accessed. This was an intermediate version of the Email Approval Hub that was taken offline. The functional version (qpzjmceezkkwdssw) is the one to keep.",
         group: "blank-error",
       },
       {
@@ -1083,7 +1100,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns HTTP error. Non-functional.",
+        purpose: "Returns an HTTP error and is completely inaccessible. The generic name and error state suggest this was a failed deployment from a development session. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1094,7 +1111,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Returns a 404 error. Non-functional.",
+        purpose: "Returns a 404 error and is completely non-functional. Deployed on the same day as hktnwesl, this appears to be another failed deployment from the same session. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1105,7 +1122,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Unnamed site. Non-functional or blank.",
+        purpose: "An unnamed site that is non-functional or blank. It has no title, no content, and no clear purpose. Likely a failed or abandoned deployment from the August development session. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1116,7 +1133,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank or did not load correctly. Non-functional.",
+        purpose: "A blank or incorrectly loaded version of the Ultimate Document Management System from the Jul 2 development session. It never rendered its content correctly. The functional version (tiujeaef) is the one to keep.",
         group: "blank-error",
       },
       {
@@ -1127,7 +1144,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank or error page. Non-functional.",
+        purpose: "Another blank or error version of the Ultimate Document Management System from the same Jul 2 session. Like yptfivjl, it never loaded correctly. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1138,7 +1155,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank placeholder page with only a 'Made with Manus' footer. No content.",
+        purpose: "A blank placeholder page with only a 'Made with Manus' footer and no actual content. Despite being deployed on the same day as the final document manager, this version never had any content added to it. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1149,7 +1166,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Set to unavailable. Non-functional.",
+        purpose: "Set to unavailable and completely inaccessible. This is one of four Universal CMS versions from Jul 8 that were all set to private/unavailable. None of them are functional. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1160,7 +1177,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Set to unavailable. Non-functional.",
+        purpose: "Set to unavailable and completely inaccessible. One of four Universal CMS versions from Jul 8 that were all set to private/unavailable. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1171,7 +1188,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Set to unavailable. Non-functional.",
+        purpose: "Set to unavailable and completely inaccessible. One of four Universal CMS versions from Jul 8 that were all set to private/unavailable. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1182,7 +1199,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Private",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Set to unavailable. Non-functional.",
+        purpose: "Set to unavailable and completely inaccessible. The last of four Universal CMS versions from Jul 8 that were all set to private/unavailable. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1193,7 +1210,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank page — no content visible despite having a title.",
+        purpose: "A blank page with no visible content despite having a title. It was deployed publicly but never had any content added to it. The name suggests it was intended as a content mastery training system. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1204,7 +1221,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Completely blank. No content or functionality.",
+        purpose: "A completely blank site with no content, no title, and no functionality. It was deployed on the same day as the Marketing Content Database but clearly never had anything added to it. Safe to delete immediately.",
         group: "blank-error",
       },
       {
@@ -1215,7 +1232,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Blank or inaccessible site.",
+        purpose: "A blank or inaccessible site with no content or title. It was deployed on the same day as the many Universal CMS duplicates and appears to be another failed deployment from that session. Safe to delete.",
         group: "blank-error",
       },
       {
@@ -1226,7 +1243,7 @@ export const siteGroups: SiteGroup[] = [
         status: "Public",
         polishLevel: "Blank/Error",
         recommendation: "Delete",
-        purpose: "Duplicate entry already listed in Content Hub group.",
+        purpose: "This entry is a duplicate of the snkvyacw site already listed in the Content Hub group. It appears twice in the deployed sites list, which is why it shows up here as well. Safe to delete — only one entry is needed.",
         group: "blank-error",
       },
     ],
