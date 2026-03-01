@@ -238,6 +238,89 @@
     border: 1px solid rgba(255,255,255,0.1);
   }
 
+  /* ── Untriaged recommendation badge ── */
+  .badge-untriaged {
+    background: linear-gradient(135deg, #737373, #5c5c5c);
+    color: #E9DFDF;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* ── Platform tab styling ── */
+  .platform-tab {
+    background: rgba(181,143,143,0.3);
+    color: #F6F2F2;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-weight: 500;
+    transition: all 0.18s ease;
+    border: 1px solid rgba(255,255,255,0.06);
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+  }
+  .platform-tab:hover {
+    background: rgba(181,143,143,0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+  }
+  .platform-tab-active {
+    background: linear-gradient(145deg, #8187A2, #6C718C);
+    color: #F6F2F2;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.12);
+  }
+
+  /* ── Bulk actions floating bar ── */
+  .bulk-actions-bar {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(145deg, #2F2E2E, #3a3838);
+    border: 1px solid rgba(181,143,143,0.3);
+    border-radius: 16px;
+    padding: 0.75rem 1.5rem;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.6);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* ── GitHub connection indicator ── */
+  .connection-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+  .connection-dot-connected {
+    background: #4a7c59;
+    box-shadow: 0 0 6px rgba(74,124,89,0.6);
+  }
+  .connection-dot-disconnected {
+    background: #737373;
+    box-shadow: 0 0 4px rgba(115,115,115,0.4);
+  }
+
+  /* ── Select mode checkbox ── */
+  .select-checkbox {
+    width: 18px;
+    height: 18px;
+    border-radius: 4px;
+    border: 2px solid #B58F8F;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .select-checkbox-active {
+    background: #8187A2;
+    border-color: #8187A2;
+  }
+
   /* ── Row hover lift ── */
   .row-lift {
     transition: background 0.15s ease, box-shadow 0.15s ease, transform 0.15s ease;

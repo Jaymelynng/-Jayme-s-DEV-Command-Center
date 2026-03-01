@@ -107,3 +107,9 @@ temp/
 
 # Webdev artifacts (checkpoint zips, migrations, etc.)
 .webdev/
+
+# Claude Code
+.claude/
+
+# Reference docs (not for public repo)
+other inventory chats and docs/
