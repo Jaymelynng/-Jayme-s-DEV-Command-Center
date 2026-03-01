@@ -8,13 +8,14 @@
  * Accent:              #8187A2
  */
 
-import { useState, useMemo, useCallback, memo } from "react";
+import { useState, useMemo, useCallback, useEffect, memo } from "react";
 import {
   Search, ExternalLink, CheckCircle2, Trash2, GitMerge,
   ChevronDown, ChevronRight, Globe, Lock, Megaphone,
   Copy, Check, X, Monitor, LayoutGrid, BookmarkCheck, Bookmark,
   Zap, Heart, Github, Triangle, Box, HelpCircle,
   CheckSquare, Square, ListChecks, ExternalLink as OpenIcon,
+  ArrowUp, ArrowDown,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -429,6 +430,45 @@ function BulkActionsBar({
   );
 }
 
+// ─── Scroll to top / bottom ──────────────────────────────────────────────────
+
+function ScrollButtons() {
+  const [show, setShow] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setShow(window.scrollY > 300);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const scrollTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
+  const scrollBottom = () => window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+
+  return (
+    <div
+      className="fixed right-4 bottom-6 flex flex-col gap-2 z-50 transition-all duration-300"
+      style={{ opacity: show ? 1 : 0, pointerEvents: show ? "auto" : "none" }}
+    >
+      <button
+        onClick={scrollTop}
+        className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110"
+        style={{ background: "linear-gradient(145deg, #8187A2, #6C718C)", color: "#F6F2F2", border: "1px solid rgba(255,255,255,0.15)" }}
+        title="Scroll to top"
+      >
+        <ArrowUp className="w-4 h-4" />
+      </button>
+      <button
+        onClick={scrollBottom}
+        className="w-10 h-10 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110"
+        style={{ background: "linear-gradient(145deg, #D4B7B7, #C4A7A7)", color: "#2F2E2E", border: "1px solid rgba(0,0,0,0.1)" }}
+        title="Scroll to bottom"
+      >
+        <ArrowDown className="w-4 h-4" />
+      </button>
+    </div>
+  );
+}
+
 // ═══════════════════════════════════════════════════════════════════════════════
 // MAIN DASHBOARD
 // ═══════════════════════════════════════════════════════════════════════════════
@@ -672,6 +712,9 @@ export default function Home() {
           onExitSelectMode={bulk.exitSelectMode}
         />
       )}
+
+      {/* Scroll to top / bottom buttons */}
+      <ScrollButtons />
     </div>
   );
 }
