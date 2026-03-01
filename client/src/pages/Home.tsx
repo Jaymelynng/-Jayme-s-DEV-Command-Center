@@ -247,9 +247,9 @@ const ProjectRow = memo(function ProjectRow({
           <div className={`w-1 h-full min-h-[72px] ${cfg.accentBar} rounded-r`} />
         </td>
         {/* Thumbnail */}
-        <td className="py-2.5 px-3 w-[100px]">
+        <td className="py-2.5 px-3 w-[150px]">
           <button onClick={() => setModalOpen(true)}
-            className="relative w-20 h-12 rounded-lg overflow-hidden flex-shrink-0 block transition-all hover:-translate-y-1 shadow-card hover:shadow-lift"
+            className="relative w-32 h-20 rounded-lg overflow-hidden flex-shrink-0 block transition-all hover:-translate-y-1 shadow-card hover:shadow-lift"
             style={{ border: "1.5px solid rgba(0,0,0,0.14)", background: "#D4B7B7" }}
             title="Click to preview">
             {project.thumbnail
@@ -380,7 +380,7 @@ function GroupSection({
               <tr style={{ background: "#C9A8A8", borderBottom: "1px solid rgba(0,0,0,0.1)" }}>
                 {selectMode && <th className="w-[40px]" />}
                 <th className="w-1" />
-                <th className="py-2.5 px-3 text-left text-xs font-bold text-[#1E1E1E] uppercase tracking-wider opacity-70 w-[100px]">Preview</th>
+                <th className="py-2.5 px-3 text-left text-xs font-bold text-[#1E1E1E] uppercase tracking-wider opacity-70 w-[150px]">Preview</th>
                 <th className="py-2.5 px-3 text-left text-xs font-bold text-[#1E1E1E] uppercase tracking-wider opacity-70">Name &amp; Description</th>
                 <th className="py-2.5 px-3 text-left text-xs font-bold text-[#1E1E1E] uppercase tracking-wider opacity-70 w-[180px]">URL</th>
                 {showPlatform && <th className="py-2.5 px-3 text-left text-xs font-bold text-[#1E1E1E] uppercase tracking-wider opacity-70">Platform</th>}
